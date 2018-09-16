@@ -1,0 +1,72 @@
+html {
+    background-color: grey;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar */
+.navbar-brand {
+    width: 300px;
+}
+
+.navbar-brand img.logo-img {
+    height: 55px;
+    width: 55px;
+    float: left;
+}
+
+.navbar-brand h2.ydwc {
+    font-size: 2em;
+    font-weight: bold;
+
+    color: black;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+/* Cover Photo */
+#slider {
+    background: url("../img/retreat_2017.jpg") no-repeat;
+    background-size: cover;
+    background-position-y: -200px;
+    padding: 200px 0 100px 0;
+}
+
+#slider:before {
+    background: linear-gradient(to left, #8b86a3, #322e40);
+    opacity: 0.2;
+}
+
+#slider .block p {
+    font-size: 30px;
+    text-align: left;
+}
+
+#slider .block p.small {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.text-center p {
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Intro */
+#intro .block p {
+    text-align: center;
+}
+
+/* About */
+#cover-photo {
+    background: url("../img/IMG_0280.JPG") no-repeat;
+    background-size: cover;
+    height: 500px;
+    padding: 200px 0 100px 0;
+}
