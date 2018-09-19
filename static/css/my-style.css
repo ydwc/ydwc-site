@@ -28,6 +28,11 @@ body {
     margin-left: 10px;
 }
 
+/* Sections */
+.section-title {
+    margin-bottom: 40px;
+}
+
 
 /* Cover Photo */
 #slider {
@@ -69,4 +74,22 @@ body {
     background-size: cover;
     height: 500px;
     padding: 200px 0 100px 0;
+}
+
+
+/* Company Logos */
+section#companies {
+    text-align: center;
+}
+
+section#companies .logo-container {
+    display: inline-flex;
+    margin-bottom: 40px;
+}
+
+section#companies .logo-item > img {
+    max-height: 100px;
+    max-width: 200px;
+    padding: 0px 20px;
+    display: inline-flex;
 }

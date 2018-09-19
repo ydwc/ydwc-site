@@ -73,6 +73,11 @@ theme = "airspace"
     title = "Join YDWC Now!"
     paragraph = "Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
 
+  [params.companies]
+    enable = true
+    title = "Where Our Members Work"
+
+
   [params.contact]
     enable = true
     title = "Drop us a note"

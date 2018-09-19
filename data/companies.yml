@@ -1,0 +1,7 @@
+enable: true
+title: Where Our Members Work
+logos:
+  - ../img/goldman.png
+  - ../img/beis.png
+  - ../img/mott_mcdonald.png
+  - ../img/linklaters.png
