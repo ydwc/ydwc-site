@@ -6,13 +6,23 @@ eventStart: 2018-10-24T19:00:00Z
 eventEnd: 2018-10-24T22:00:00Z
 author: YDWC Team
 draft: false
-image: ../img/dr_yvonne.png
 ---
 
-Blah blah blah, some paragraph text. Our highly emmersive and engaging range of events offer endless opportunities to connect with a diverse range of young professionals to exchange experiences and insights into different professional industries and professional development routes
+{{<youtube XvIHZkrR27M>}}
 
-We offer a range of consultation services to provide support and advice throughout each step of your early career progression. Through partnerships with a number of FTSE 350 companies we are able to provide invaluable insights and opportunities to help develop your career, and drive your personal development
+### Be Your Authentic Self
 
-Where we fall short as individuals, we rise as a community. At YDWC we pride ourselves on creating a welcoming and inclusive environment to facilitate the development of long-lasting relationships. Our network is a space to meet new people and to connect with peers that we often find ourselves alienated from as we progress professionally
+In order to succeed professionally, graduates from diverse background need not only academic achievements but opportunities and insights from role models they can identify with. The Careers Insight dinner provides this.
 
-Surrounding yourself with people who will inspire and uplift you, is fundamental to your level of attainment in life. Our mission is to create a platform to facilitate high value exchanges of ideas, perspectives and ambitions between the brightest talents from underrepresented background across the UK
+For many students from diverse backgrounds, they will be amongst the first in their family or peer group to enter their chosen profession. For these students their ability to excel can be impeded by  limited access to professional networks that understand the challenges of coming from a diverse background.
+
+By bringing together a collection of successful young professionals, the Career Insights Dinner seeks to provide individuals with an opportunity to benefit from the expertise and experience of young professionals who are excelling in highly sought-after career paths.
+
+This year's speakers include: Georgia Bennett (Mott MacDonald), Isi Ijagbone (DLA Piper), Gbolahan Ladipo (Nomura), Joel Semakula (Court of Appeal), Sravya Rao and Mayuri Pandya (Department for Business, Energy and Industrial Strategy).
+
+
+**Location: Busaba Stratford**
+
+**Date: 24/10/2018 at 18:30**
+
+**Price: £30**

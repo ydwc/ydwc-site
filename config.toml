@@ -20,27 +20,14 @@ theme = "airspace"
     parent = "events"
     url = "/events/career_insights"
 
-
   [[menu.footer]]
     weight = 1
     name = "About us"
-    url = "#"
+    url = "/about"
   [[menu.footer]]
     weight = 2
-    name = "Contact us"
-    url = "#"
-  [[menu.footer]]
-    weight = 3
-    name = "How it works"
-    url = "#"
-  [[menu.footer]]
-    weight = 4
-    name = "Blog"
-    url = "#"
-  [[menu.footer]]
-    weight = 5
-    name = "Terms"
-    url = "#"
+    name = "Email us"
+    url = "mailto:youngdiverseworldchangers@gmail.com"
 
 # The site's parameters
 [params]

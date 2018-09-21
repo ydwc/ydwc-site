@@ -6,32 +6,33 @@
 
 </head>
 <body>
+    <div class="home">
+        {{ partial "header.html" . }}
 
-    {{ partial "header.html" . }}
+        {{ if and (isset .Site.Params "slider") (.Site.Params.slider.enable) }}
+            {{ partial "slider.html" . }}
+        {{ end }}
 
-    {{ if and (isset .Site.Params "slider") (.Site.Params.slider.enable) }}
-        {{ partial "slider.html" . }}
-    {{ end }}
+        {{ if and (isset .Site.Params "intro") (.Site.Params.intro.enable) }}
+            {{ partial "intro.html" . }}
+        {{ end }}
 
-    {{ if and (isset .Site.Params "intro") (.Site.Params.intro.enable) }}
-        {{ partial "intro.html" . }}
-    {{ end }}
+        {{ if and (isset .Site.Params "feature") (.Site.Params.feature.enable) }}
+            {{ partial "feature.html" . }}
+        {{ end }}
 
-    {{ if and (isset .Site.Params "feature") (.Site.Params.feature.enable) }}
-        {{ partial "feature.html" . }}
-    {{ end }}
+        {{ if and .Site.Data.values .Site.Data.values.enable }}
+            {{ partial "values.html" . }}
+        {{ end }}
 
-    {{ if and .Site.Data.values .Site.Data.values.enable }}
-        {{ partial "values.html" . }}
-    {{ end }}
+        {{ if and .Site.Data.companies .Site.Data.companies.enable }}
+            {{ partial "companies.html" . }}
+        {{ end }}
 
-    {{ if and .Site.Data.companies .Site.Data.companies.enable }}
-        {{ partial "companies.html" . }}
-    {{ end }}
+        {{ partial "events-peek.html" . }}
 
-    {{ partial "events-peek.html" . }}
-
-    {{ partial "footer.html" . }}
+        {{ partial "footer.html" . }}
+    </div>
 
 </body>
 </html>
