@@ -5,14 +5,21 @@ theme = "airspace"
 
 [menu]
 
-  [[menu.header]]
+  [[menu.main]]
     weight = 2
     name = "About Us"
     url = "/about"
-  [[menu.header]]
+  [[menu.main]]
     weight = 3
     name = "Events"
+    identifier = "events"
     url = "/events"
+  [[menu.main]]
+    weight = 1
+    name = "Career Insights Dinner"
+    parent = "events"
+    url = "/events/career_insights"
+
 
   [[menu.footer]]
     weight = 1
@@ -59,7 +66,7 @@ theme = "airspace"
     title = "YDWC"
     paragraph = [
       "YDWC is a network and hub for young professionals from diverse and underrepresented backgrounds.",
-      "At YDWC we believe in the power of community. We work to to empower our members with the resources, connections and knowledge to drive professional and personal development.",
+      "We believe in the power of community. We work to to empower our members with the resources, connections and knowledge to drive professional and personal development.",
       "Our mission is to connect young, talented professionals, with genuinely life changing opportunities to advance their careers and create positive social change within their communities."
     ]
 

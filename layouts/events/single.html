@@ -9,26 +9,22 @@
 
     <div class="post">
       <!-- Wrapper Start -->
-      <section class="section" style="border: 1px dotted #ddd;">
+      <section style="border: 1px dotted #ddd;">
+        <div class="cover-photo">
+          {{ with .Params.image }}<img src="{{ . | absURL }}" width="100%" alt="post-image"> {{ end }}
+        </div>
         <div class="container">
           <div class="row">
             <div>
-              <div class="block">
-                            {{ with .Params.image }}<img src="{{ . | absURL }}" width="100%" alt="post-image"> {{ end }}
+              <div class="col-md-1"></div>
+              <div class="block col-md-10">
                 <h1>{{ .Params.title }}</h1>
+                <div class="post-info-wrapper">
+                  <h2> {{ dateFormat "Mon, January 2, 2006 | 3:04 PM" .Params.eventStart }} - {{ dateFormat "3:04 PM" .Params.eventEnd }} </h2>
+                  <h3>{{ .Params.location }}</h3>
+                </div>
                 <hr />
-
-                {{ $data := getJSON "https://www.googleapis.com/calendar/v3/calendars/u5lq980nc19uol0mo622rfrkg4@group.calendar.google.com/events?key=AIzaSyCIk30cGtgdYj_8mjMa_gs7aPMjz1Xb-l4" }}
-
-                {{ range $data.items }}
-                  <h3>{{ .summary }}</h3>
-                  <h4>{{ .location }} </h4>
-                  <h4>{{ dateFormat "Monday, January 2, 2006 | 3:04 PM" .start.dateTime }} - {{ dateFormat "3:04 PM" .end.dateTime }} </h4>
-                  {{ $desc := replace .description "\n" "<br/>" | safeHTML }}
-                  <p>{{ $desc }}</p>
-                {{ end }}
-
-
+                <p>{{ .Content }}</p>
               </div>
             </div><!-- .col-md-7 close -->
           </div>

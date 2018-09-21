@@ -1,0 +1,4 @@
+enable: true
+title: Upcoming Events
+events_to_show: 2
+next_url: "events#events-title"

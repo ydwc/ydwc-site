@@ -1,0 +1,29 @@
+<section id="events-peek">
+  <div class="container">
+    <!-- Intro -->
+    <div class="row">
+      <div class="section-title">
+        <h2>{{ .Site.Data.events_peek.title }}</h2>
+      </div>
+    </div>
+    {{ $num_events := string .Site.Data.events_peek.events_to_show }}
+    {{ $data := getJSON "https://www.googleapis.com/calendar/v3/calendars/u5lq980nc19uol0mo622rfrkg4@group.calendar.google.com/events?key=AIzaSyCIk30cGtgdYj_8mjMa_gs7aPMjz1Xb-l4&maxResults=" $num_events }}
+
+    <div class="row">
+    {{ range $data.items }}
+      <div  class="event-item col-md-6">
+        <h3>{{ .summary }}</h3>
+        <h4>{{ .location }} </h4>
+        <h4>{{ dateFormat "2 Jan | 3:04 PM" .start.dateTime }} - {{ dateFormat "3:04 PM" .end.dateTime }} </h4>
+        {{ $desc := replace .description "\n" "<br/>" | safeHTML }}
+        <p>{{ truncate 280 $desc }}</p>
+      </div>
+    {{ end }}
+    </div>
+    <div class="row">
+      <div class="next_url">
+        <a href="{{ .Site.Data.events_peek.next_url }}">View All ></a>
+      </div>
+    </div>
+  </div>
+</section>

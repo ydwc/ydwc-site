@@ -3,8 +3,24 @@ html {
 }
 
 body {
-    max-width: 1200px;
+    max-width: 992px;
     margin: auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+.cover-photo {
+    max-height: 450px;
+    overflow: hidden;
+    margin-bottom: 50px
+}
+
+.post .container {
+    margin-bottom: 70px;
 }
 
 /* Navbar */
@@ -38,7 +54,6 @@ body {
 #slider {
     background: url("../img/retreat_2017.jpg") no-repeat;
     background-size: cover;
-    background-position-y: -200px;
     padding: 200px 0 100px 0;
 }
 
@@ -92,4 +107,29 @@ section#companies .logo-item > img {
     max-width: 200px;
     padding: 0px 20px;
     display: inline-flex;
+}
+
+/* Events Peek */
+section#events-peek {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section#events-peek .event-item {
+    text-align: left;
+}
+
+#events-peek div.next_url {
+    text-align: right;
+    padding: 0px 100px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Events Page */
+section#events-page .event-item {
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    border-bottom: 1px dotted #ddd;
 }
