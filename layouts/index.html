@@ -25,11 +25,11 @@
             {{ partial "values.html" . }}
         {{ end }}
 
+        {{ partial "events-peek.html" . }}
+
         {{ if and .Site.Data.companies .Site.Data.companies.enable }}
             {{ partial "companies.html" . }}
         {{ end }}
-
-        {{ partial "events-peek.html" . }}
 
         {{ partial "footer.html" . }}
     </div>
