@@ -20,7 +20,7 @@
               <h1 id="events-title">{{ .Params.title }}</h1>
               <hr />
 
-              {{ $data := getJSON "https://www.googleapis.com/calendar/v3/calendars/u5lq980nc19uol0mo622rfrkg4@group.calendar.google.com/events?key=AIzaSyCIk30cGtgdYj_8mjMa_gs7aPMjz1Xb-l4" }}
+              {{ $data := getJSON "https://www.googleapis.com/calendar/v3/calendars/u5lq980nc19uol0mo622rfrkg4@group.calendar.google.com/events?singleEvents=true&orderBy=startTime&key=AIzaSyCIk30cGtgdYj_8mjMa_gs7aPMjz1Xb-l4" }}
 
               {{ range $data.items }}
                 <div class="event-item">

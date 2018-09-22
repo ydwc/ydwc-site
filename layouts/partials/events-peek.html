@@ -7,7 +7,7 @@
       </div>
     </div>
     {{ $num_events := string .Site.Data.events_peek.events_to_show }}
-    {{ $data := getJSON "https://www.googleapis.com/calendar/v3/calendars/u5lq980nc19uol0mo622rfrkg4@group.calendar.google.com/events?key=AIzaSyCIk30cGtgdYj_8mjMa_gs7aPMjz1Xb-l4&maxResults=" $num_events }}
+    {{ $data := getJSON "https://www.googleapis.com/calendar/v3/calendars/u5lq980nc19uol0mo622rfrkg4@group.calendar.google.com/events?key=AIzaSyCIk30cGtgdYj_8mjMa_gs7aPMjz1Xb-l4&singleEvents=true&orderBy=startTime&maxResults=" $num_events }}
 
     <div class="row">
     {{ range $data.items }}
