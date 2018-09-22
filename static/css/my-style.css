@@ -63,7 +63,7 @@ body {
 
 /* Cover Photo */
 #slider {
-    background: url("../img/retreat_2018.jpg") no-repeat;
+    background: url("../img/retreat_2018.jpg") no-repeat center center;
     background-size: cover;
     height: 450px;
     padding: 0px;
@@ -75,13 +75,6 @@ body {
     background: linear-gradient(to left, #8b86a3, #322e40);
     opacity: 0.2;
 }
-
-#slider:after {
-    display: block;
-    height: 40px;
-    background: url("../img/africa_pattern.jpg");
-}
-
 
 #slider .block p {
     font-size: 30px;
@@ -112,7 +105,7 @@ section#intro {
 
 /* About */
 #cover-photo {
-    background: url("../img/IMG_0280.JPG") no-repeat;
+    background: url("../img/IMG_0280.JPG") no-repeat center center;
     background-size: cover;
     height: 450px;
     padding: 200px 0 100px 0;
@@ -179,27 +172,27 @@ div.value-portrait {
 }
 
 div.value-portrait#knowledge {
-    background: url("../img/tamika.jpg") no-repeat;
+    background: url("../img/tamika.jpg") no-repeat center center;
     background-size: cover;
 }
 
 div.value-portrait#talent {
-    background: url("../img/mustie.jpg") no-repeat;
+    background: url("../img/mustie.jpg") no-repeat center center;
     background-size: cover;
 }
 
 div.value-portrait#community {
-    background: url("../img/georgia.jpg") no-repeat;
+    background: url("../img/georgia.jpg") no-repeat center center;
     background-size: cover;
 }
 
 div.value-portrait#support {
-    background: url("../img/joel.jpg") no-repeat;
+    background: url("../img/joel.jpg") no-repeat center center;
     background-size: cover;
 }
 
 div.value-portrait#narratives {
-    background: url("../img/ebun.jpg") no-repeat;
+    background: url("../img/ebun.jpg") no-repeat center center;
     background-size: cover;
 }
 
