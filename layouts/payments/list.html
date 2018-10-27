@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body>
+  <div class="wrapper">
+    {{ partial "header.html" . }}
+    <!-- Wrapper Start -->
+    <section id="payments-page" class="page" style="border: 1px dotted #ddd;">
+      <div class="container">
+        <div class="cover-photo">
+          {{ with .Params.image }}<img src="{{ . | absURL }}" width="100%" alt="post-image"> {{ end }}
+        </div>
+
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="block col-md-10">
+            <h1 id="events-title">Event Payments</h1>
+            <hr />
+          </div>
+
+          <table>
+            <tr>
+              <th>Event</th>
+              <th>Date</th>
+              <th>Price</th>
+              <th></th>
+            </tr>
+            {{ range .Site.Data.events.events }}
+            <tr>
+              <td>{{ .title }}</td>
+              <td>{{ dateFormat "Mon 2 Jan 2006" .date }}</td>
+              <td>£{{ div .price 100.0 }}</td>
+              <td><form action="http://127.0.0.1:5000/pay" method="POST">
+                    <input type="hidden" name="event" value={{ .key }}>
+                    <script
+                      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                      data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+                      data-amount={{ .price }}
+                      data-currency="gbp"
+                      data-name="Stripe.com"
+                      data-description="Example charge"
+                      data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                      data-locale="auto"
+                      data-zip-code="true">
+                    </script>
+                  </form>
+              </td>
+            </tr>
+            {{ end }}
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<!--     <h1>HI!! I"m a PAYMENTS PAGE!!</h1>
+ -->
+
+    {{ partial "footer.html" . }}
+</body>
+</html>

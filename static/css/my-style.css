@@ -1,10 +1,16 @@
 html {
     background-color: #ddd;
+    min-height: 100%;
 }
 
 body {
     max-width: 992px;
+    min-height: 100vh;
     margin: auto;
+}
+
+.wrapper {
+    min-height: calc(100vh - 220px);
 }
 
 @media (min-width: 1200px) {
@@ -218,3 +224,22 @@ input[type="radio"]:checked + div.value-button {
     visibility: hidden;
     border: 1px solid red;
 }
+
+
+/* Payments page */
+#payments-page table {
+    margin: 50px;
+    width: 100%;
+}
+
+#payments-page table tr {
+    height: 40px;
+    font-size: 1.1em;
+}
+
+#payments-page table th {
+    height: 40px
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
