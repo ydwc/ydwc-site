@@ -3,10 +3,7 @@
 <head>
     {{ partial "head.html" . }}
     {{ $stripePubKey := getenv "STRIPE_PUB_KEY" | default "pk_test_TYooMQauvdEDq54NiTphI7jx" }}
-    {{ $apiUrl :=  "http://127.0.0.1:5000/" }}
-    {{ if eq (getenv "HUGO_ENV") "production" }}
-      {{ $apiUrl := "http://35.189.93.249/" }}
-    {{ end }}
+    {{ $apiUrl := getenv "API_URL" | default "http://127.0.0.1:5000/" }}
 </head>
 <body>
   <div class="wrapper">
