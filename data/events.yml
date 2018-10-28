@@ -1,10 +1,4 @@
 events:
-  - title: Career Insights Dinner
-    key: career_insights
-    date: '2018-10-24T00:00:00Z'
-    price: 3000
-    description: >
-      The Career Insights dinner provides students, recent graduates and young professionals the opportunity to learn from and network with accomplished diverse professionals from a variety of fields. These professionals will share their insights and advice on career pathways and working as a diverse person.
   - title: End of Year Dinner
     key: eoy_dinner
     date: '2018-11-30T00:00:00Z'
@@ -23,3 +17,9 @@ events:
     price: 19200
     description: >
       The Summer Retreat is a chance for participants to take part in workshops which are delivered by talented young professionals who come from diverse backgrounds. Perhaps they are interested in learning how investment bankers deal with pressure or discovering how barristers prepare their closing case. We provide the opportunity for them to facilitate or be part of exceptional workshops which are run by their professional peers.
+  - title: Career Insights Dinner
+    key: career_insights
+    date: '2019-10-23T00:00:00Z'
+    price: 3000
+    description: >
+      The Career Insights dinner provides students, recent graduates and young professionals the opportunity to learn from and network with accomplished diverse professionals from a variety of fields. These professionals will share their insights and advice on career pathways and working as a diverse person.

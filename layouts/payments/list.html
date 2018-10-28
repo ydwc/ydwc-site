@@ -2,6 +2,11 @@
 <html>
 <head>
     {{ partial "head.html" . }}
+    {{ $stripePubKey := getenv "STRIPE_PUB_KEY" | default "pk_test_TYooMQauvdEDq54NiTphI7jx" }}
+    {{ $apiUrl :=  "http://127.0.0.1:5000/" }}
+    {{ if eq (getenv "HUGO_ENV") "production" }}
+      {{ $apiUrl := "https://api.ydwc.org/" }}
+    {{ end }}
 </head>
 <body>
   <div class="wrapper">
@@ -32,11 +37,11 @@
               <td>{{ .title }}</td>
               <td>{{ dateFormat "Mon 2 Jan 2006" .date }}</td>
               <td>£{{ div .price 100.0 }}</td>
-              <td><form action="http://127.0.0.1:5000/pay" method="POST">
+              <td><form action="{{ $apiUrl }}pay" method="POST">
                     <input type="hidden" name="event" value={{ .key }}>
                     <script
                       src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                      data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+                      data-key={{ $stripePubKey }}
                       data-amount={{ .price }}
                       data-currency="gbp"
                       data-name="Stripe.com"
