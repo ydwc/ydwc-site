@@ -259,3 +259,10 @@ input[type="radio"]:checked + div.value-button {
 #payments-page table td {
     padding: 7px;
 }
+
+#payments-page iframe {
+    width: 100%;
+    max-height: 50px;
+    border: none;
+    margin-bottom: -50px;
+}
