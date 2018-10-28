@@ -9,6 +9,15 @@ body {
     margin: auto;
 }
 
+/* Overall text style */
+h3 {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+
 .wrapper {
     min-height: calc(100vh - 220px);
 }
@@ -227,8 +236,12 @@ input[type="radio"]:checked + div.value-button {
 
 
 /* Payments page */
+#payments-page {
+    margin-bottom: 80px;
+}
+
 #payments-page table {
-    margin: 50px;
+    margin: 50px 0px;
     width: 100%;
 }
 
@@ -243,3 +256,6 @@ input[type="radio"]:checked + div.value-button {
     font-size: 1.1em;
 }
 
+#payments-page table td {
+    padding: 7px;
+}
