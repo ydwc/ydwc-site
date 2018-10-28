@@ -7,10 +7,11 @@
       </div>
     </div>
     {{ $num_events := string .Site.Data.events_peek.events_to_show }}
-    {{ $data := getJSON "https://www.googleapis.com/calendar/v3/calendars/u5lq980nc19uol0mo622rfrkg4@group.calendar.google.com/events?key=AIzaSyCIk30cGtgdYj_8mjMa_gs7aPMjz1Xb-l4&singleEvents=true&orderBy=startTime&maxResults=" $num_events }}
+    {{ $now := string (now.Format "2006-01-02T15:04:05Z") }}
+    {{ $data := getJSON "https://www.googleapis.com/calendar/v3/calendars/u5lq980nc19uol0mo622rfrkg4@group.calendar.google.com/events?singleEvents=true&orderBy=startTime&key=AIzaSyCIk30cGtgdYj_8mjMa_gs7aPMjz1Xb-l4&timeMin=" $now }}
 
     <div class="row">
-    {{ range $data.items }}
+    {{ range first $num_events (where $data.items ".start.dateTime" "!=" nil) }}
       <div  class="event-item col-md-6">
         <h3>{{ .summary }}</h3>
         <h4>{{ .location }} </h4>
