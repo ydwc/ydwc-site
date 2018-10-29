@@ -15,10 +15,10 @@ theme = "airspace"
     identifier = "events"
     url = "/events"
   [[menu.main]]
-    weight = 1
-    name = "Career Insights Dinner"
-    parent = "events"
-    url = "/events/career_insights"
+    weight = 4
+    name = "Payments"
+    identifier = "payments"
+    url = "/payments"
 
   [[menu.footer]]
     weight = 1
